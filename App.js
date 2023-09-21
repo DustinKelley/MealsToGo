@@ -18,6 +18,8 @@ export default function App() {
   );
 }
 
+//Test Comment
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
