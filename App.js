@@ -18,7 +18,7 @@ export default function App() {
   );
 }
 
-//Test Comment X2
+//This is a feature 
 
 const styles = StyleSheet.create({
   container: {
