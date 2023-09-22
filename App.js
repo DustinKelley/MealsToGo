@@ -1,13 +1,20 @@
-import React from "react";
+import * as React from "react";
+import { Searchbar } from "react-native-paper";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, SafeAreaView, StatusBar } from "react-native";
 
 export default function App() {
+  const [searchQuery, setSearchQuery] = React.useState(" ");
+  const onChangeSearch = (query) => setSearchQuery(query);
   return (
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.search}>
-          <Text>Search</Text>
+          <Searchbar
+            placeholder="Search"
+            onChangeText={onChangeSearch}
+            value={searchQuery}
+          />
         </View>
         <View style={styles.list}>
           <Text>List</Text>
@@ -18,7 +25,7 @@ export default function App() {
   );
 }
 
-//This is a feature 
+//This is a feature
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +34,7 @@ const styles = StyleSheet.create({
   },
   search: {
     padding: 16,
-    backgroundColor: "green",
+    // backgroundColor: "green",
   },
   list: {
     flex: 1,
