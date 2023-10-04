@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, StatusBar, SafeAreaView } from "react-native";
+import { View, StyleSheet, StatusBar, SafeAreaView } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { RestaurantInfo } from "../components/restaurant.info";
 
@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
   },
   search: {
     padding: 16,
-    backgroundColor: "green",
+    //backgroundColor: "green",
   },
   list: {
     flex: 1,
     padding: 16,
-    backgroundColor: "blue",
+    //backgroundColor: "blue",
   },
 });
